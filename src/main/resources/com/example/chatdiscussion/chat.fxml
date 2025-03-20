@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatdiscussion.controller.ChatController">
+    <!-- Zone des utilisateurs -->
+    <VBox fx:id="userButtonsContainer" alignment="BOTTOM_RIGHT" spacing="10" styleClass="userButtonsContainer" AnchorPane.bottomAnchor="10" AnchorPane.rightAnchor="10">
+        <!-- Les boutons des utilisateurs seront ajoutés dynamiquement ici -->
+    </VBox>
+
+    <!-- Zone de chat -->
+    <VBox fx:id="chatContainer" layoutX="10" layoutY="10" spacing="10" styleClass="chatContainer">
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED" styleClass="scrollPane">
+            <VBox fx:id="messageContainer" spacing="10" />
+        </ScrollPane>
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <TextField fx:id="messageField" promptText="Écrivez un message..." prefWidth="300" styleClass="messageField"/>
+            <Button text="Envoyer" onAction="#handleSendMessage" styleClass="button"/>
+        </HBox>
+    </VBox>
+</AnchorPane>

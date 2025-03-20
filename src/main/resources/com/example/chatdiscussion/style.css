@@ -1,0 +1,90 @@
+/* Style global de la fenêtre */
+.root {
+    -fx-background-color: #F4F4F9;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Style des utilisateurs et de leurs boutons */
+.label {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 15px;
+    -fx-padding: 10px;
+    -fx-margin: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.label:hover {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+/* Style de l'interface de connexion et du chat */
+.loginVBox, .chatVBox {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+    -fx-pref-width: 400px; /* Largeur commune */
+    -fx-pref-height: 400px; /* Hauteur commune */
+}
+
+.textField {
+    -fx-background-color: #F1F1F1;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-pref-width: 300px; /* Largeur fixe */
+    -fx-text-fill: #444;
+    -fx-font-size: 14px;
+    -fx-border: none;
+}
+
+.textField:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #007bff;
+}
+
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border: none;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button:pressed {
+    -fx-background-color: #003f7f;
+}
+
+/* Pour les éléments de chat */
+.chatVBox {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+    -fx-pref-width: 400px; /* Même largeur */
+    -fx-pref-height: 400px; /* Même hauteur */
+}
+
+#messageField {
+    -fx-background-color: #F1F1F1;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px;
+    -fx-pref-width: 300px;
+    -fx-text-fill: #444;
+    -fx-font-size: 14px;
+    -fx-border: none;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 8, 0, 0, 4);
+}
+
+#messageField:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #007bff;
+}
